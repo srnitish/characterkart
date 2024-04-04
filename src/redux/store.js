@@ -1,20 +1,21 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { persistReducer, persistStore } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
 import characterReducer from './slice/characterSlices';
+import storage from 'redux-persist/lib/storage';
+import { persistReducer } from 'redux-persist';
+import { combineReducers } from '@reduxjs/toolkit';
 
 const persistConfig = {
-    key: 'root',
-    storage,
+    key: "root",
+    version: 1.0,
+    storage
 };
 
-const persistedReducer = persistReducer(persistConfig, characterReducer);
-
-export const store = configureStore({
-    reducer: {
-        character: characterReducer,
-        persistor: persistedReducer,
-    }
+const reducer = combineReducers({
+    character: characterReducer,
 })
 
-export const persistor = persistStore(store);
+const persistedReducer = persistReducer(persistConfig, reducer);
+
+export const store = configureStore({
+    reducer: persistedReducer,
+})

@@ -1,7 +1,8 @@
 import React,{useEffect} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchAllCharacter, fetchCharacterById } from './redux/slice/characterSlices';
+import { fetchCharacterById } from './redux/slice/characterSlices';
 import { useParams, useNavigate, Link } from 'react-router-dom';
+
 
 function CharacterDetails() {
 
@@ -17,8 +18,10 @@ function CharacterDetails() {
 
     const handlePrevious = () => {
         const previousId = currentCharacter.id - 1;
+        if(previousId > 0){
         dispatch(fetchCharacterById(previousId));
         navigate(`/character/${previousId}`);
+        }
       };
     
       const handleNext = () => {

@@ -21,8 +21,9 @@ export const fetchCharacterById = createAsyncThunk('fetchCharacterById', async(i
     }
 });
 
+
 const characterSlice = createSlice({
-    name: 'characterReducer',
+    name: 'characters',
     initialState: {
         loading: false,
         data: null,
