@@ -1,6 +1,6 @@
 {
-    "homepage": "https://srnitish.github.com/characters/",
-    "name": "character",
+    "homepage": "https://srnitish.github.com/characterkart/",
+    "name": "characterkart",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -23,7 +23,7 @@
     },
     "scripts": {
         "predeploy": "npm run build",
-        "deploy": "gh-pages -d build -r https://github.com/srnitish/characters",
+        "deploy": "gh-pages -d build -r https://github.com/srnitish/characterkart",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
