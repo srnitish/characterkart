@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/characterkart/static/css/main.3c3c2fae.css",
+    "main.js": "/characterkart/static/js/main.55e36130.js",
+    "static/js/453.d9cda04c.chunk.js": "/characterkart/static/js/453.d9cda04c.chunk.js",
+    "index.html": "/characterkart/index.html",
+    "main.3c3c2fae.css.map": "/characterkart/static/css/main.3c3c2fae.css.map",
+    "main.55e36130.js.map": "/characterkart/static/js/main.55e36130.js.map",
+    "453.d9cda04c.chunk.js.map": "/characterkart/static/js/453.d9cda04c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3c3c2fae.css",
+    "static/js/main.55e36130.js"
+  ]
+}
