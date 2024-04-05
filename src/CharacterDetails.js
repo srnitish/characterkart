@@ -68,7 +68,7 @@ function CharacterDetails() {
                                 <p className="card-title"><strong>Origin:</strong> {currentCharacter.origin.name}</p>
                                 <p className="card-title"><strong>Location:</strong> {currentCharacter.location.name}</p>
                                 </div>
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p className="card-text">Some quick example Redux texts to build on the card title and make up the bulk of the card's content.</p>
                                 
                             </div>
                         </div>
