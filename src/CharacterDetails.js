@@ -32,7 +32,7 @@ function CharacterDetails() {
     
 
     if(loading){
-        return <div><center>Loading...</center></div>;
+        return <div className='centerLoading'><center>Loading...</center></div>;
     }
 
     if(error){
@@ -44,12 +44,12 @@ function CharacterDetails() {
     }
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid mt-5">
             <div className="row">
             <h1>Characters Details</h1>
 
                 <div className="col-lg-3 col-md-3 col-sm-4">
-                <Link to="/characters/">
+                <Link to="/characterkart/">
                     <button className="btn btn-outline-secondary" style={{marginRight: `10px`}}>Home</button>
                 </Link>
                     <button className='btn btn-outline-primary' onClick={handlePrevious}>Previous</button>
